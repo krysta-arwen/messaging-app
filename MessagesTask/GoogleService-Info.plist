@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>889935946536-mpth0uaso3u91o8pq46v2korp5bfq8pd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.889935946536-mpth0uaso3u91o8pq46v2korp5bfq8pd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBnPvLbjpSOX2vBTzsH5rZzBohM0le0mN4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>889935946536</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.krystaarwen.MessagesTask</string>
+	<key>PROJECT_ID</key>
+	<string>messaging-task</string>
+	<key>STORAGE_BUCKET</key>
+	<string>messaging-task.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:889935946536:ios:7e4f74c7ef41bcde</string>
+	<key>DATABASE_URL</key>
+	<string>https://messaging-task.firebaseio.com</string>
+</dict>
+</plist>
