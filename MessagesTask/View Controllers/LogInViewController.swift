@@ -16,6 +16,8 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

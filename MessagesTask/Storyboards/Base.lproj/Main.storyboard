@@ -24,6 +24,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-z3-2YB">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="45"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="LogInButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="aXL-GH-4dR"/>
                                         </constraints>
@@ -36,6 +37,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yli-Cv-ygN">
                                         <rect key="frame" x="0.0" y="53" width="295" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="SignUpButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="OAD-bh-I2u"/>
                                         </constraints>
@@ -76,6 +78,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="To4-Hk-4Nz">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" label="NameTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="mzc-97-eaR"/>
                                         </constraints>
@@ -85,6 +88,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-qY-wvu">
                                         <rect key="frame" x="0.0" y="55" width="305" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="9Qn-6d-mUp"/>
                                         </constraints>
@@ -94,6 +98,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ZN-go-BnV">
                                         <rect key="frame" x="0.0" y="110" width="305" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Bgt-8U-BTt"/>
                                         </constraints>
@@ -104,6 +109,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgV-3G-Uey">
                                         <rect key="frame" x="0.0" y="165" width="305" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="SignUpButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="87u-w1-AqI"/>
                                         </constraints>
@@ -233,6 +239,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP2-hd-VUN">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="vTm-Mh-YPU"/>
                                         </constraints>
@@ -242,6 +249,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVY-2Y-mWG">
                                         <rect key="frame" x="0.0" y="55" width="305" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="KLy-xA-06y"/>
                                         </constraints>
@@ -252,6 +260,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-yS-Llq">
                                         <rect key="frame" x="0.0" y="110" width="305" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="LogInButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="cpL-K5-2HD"/>
                                         </constraints>
@@ -352,7 +361,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0cE-Sh-4RC"/>
+        <segue reference="Nas-Sa-4VD"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
