@@ -27,6 +27,12 @@ class ConversationViewController: MessagesViewController {
         messagesCollectionView.messagesDisplayDelegate = self
         messageInputBar.delegate = self
         ref = Database.database().reference()
+        
+        //Fill users array from user defaults
+        selectedUsers = []
+        let userDefaults = UserDefaults.standard
+        
+        selectedUsers = userDefaults.stringArray(forKey: "Friends") ?? [String]()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +68,8 @@ class ConversationViewController: MessagesViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         self.ref.removeObserver(withHandle: databaseHandle)
+        selectedUsers.removeAll()
+        messages.removeAll()
     }
     
     @IBAction func logoutTapped(_ sender: Any) {

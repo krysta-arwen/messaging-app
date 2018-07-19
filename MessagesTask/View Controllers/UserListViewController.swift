@@ -35,10 +35,16 @@ class UserListViewController: UITableViewController {
         let userDefaults = UserDefaults.standard
         
         userDefaults.set(selectedUsers, forKey: "Friends")
+        
+        users.removeAll()
+        selectedUsers.removeAll()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        users.removeAll()
+        selectedUsers.removeAll()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
