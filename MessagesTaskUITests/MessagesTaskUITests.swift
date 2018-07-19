@@ -71,7 +71,6 @@ class MessagesTaskUITests: XCTestCase {
         app.navigationBars["Messages"].buttons["Add"].tap()
         
         //Depending on current state of cell, test tapping on cell selects or deselects it
-        app.tables.cells.element(boundBy: 0).accessoryType == .checkmark
         if app.tables.cells.element(boundBy: 0).isSelected {
             let cellQuery = app.tables.cells.element(boundBy: 0)
             cellQuery.tap()
