@@ -26,7 +26,7 @@ class ConversationViewController: MessagesViewController {
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
         messageInputBar.delegate = self
-        ref = Database.database().reference()
+        ref = Database.database().reference().child("messages")
         
         //Fill users array from user defaults
         selectedUsers = []
@@ -44,7 +44,7 @@ class ConversationViewController: MessagesViewController {
         
         //Set up messages
         messages.removeAll()
-        databaseHandle = ref.child("messages").observe(.childAdded, with: { (snapshot) -> Void in
+        databaseHandle = ref.observe(.childAdded, with: { (snapshot) -> Void in
             if let value = snapshot.value as? [String:AnyObject] {
                 let id = value["senderId"] as! String
                 let text = value["text"] as! String
@@ -67,7 +67,8 @@ class ConversationViewController: MessagesViewController {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        self.ref.removeObserver(withHandle: databaseHandle)
+        self.ref.removeObserver(withHandle: self.databaseHandle)
+        self.ref.removeAllObservers()
         selectedUsers.removeAll()
         messages.removeAll()
     }
@@ -105,7 +106,7 @@ extension ConversationViewController: MessagesDataSource {
 extension ConversationViewController: MessageInputBarDelegate {
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
-        let messageRef = ref.child("messages").childByAutoId()
+        let messageRef = ref.childByAutoId()
         let message = [
             "text": text,
             "senderId": currentSender().id,
